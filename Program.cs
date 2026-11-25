@@ -20,14 +20,13 @@ while (number <= 10) {
 
 Console.WriteLine($"Сумма: {sum}");
 
-
 Console.WriteLine();
 Console.WriteLine("Бесконечный цикл");
 
-int i = 1;
-while (i <= 5) {
-    Console.WriteLine($"Значение i: {i}");
-    i++;
+int counter = 1;
+while (counter <= 5) {
+    Console.WriteLine($"Значение i: {counter}");
+    counter++;
 }
 
 Console.WriteLine();
@@ -46,7 +45,6 @@ while (!isValid) {
 }
 Console.WriteLine($"Принято! Ваш возраст: {enteredAge}");
 
-// шаг 3
 Console.WriteLine();
 Console.WriteLine("Меню (без выхода, один проход)");
 
@@ -73,3 +71,22 @@ do {
             break;
     }
 } while (menuChoice != "0");
+
+Console.WriteLine();
+Console.WriteLine("Прямой счёт");
+for (int i = 1; i <= 5; i++) {
+    Console.WriteLine(i);
+}
+
+Console.WriteLine();
+Console.WriteLine("Обратный счёт");
+for (int i = 5; i >= 1; i--) {
+    Console.WriteLine(i);
+}
+
+Console.WriteLine();
+Console.WriteLine("Чётные числа от 0 до 20");
+for (int i = 0; i <= 20; i += 2) {
+    Console.Write($"{i} ");
+}
+Console.WriteLine();
